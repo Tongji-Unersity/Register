@@ -274,6 +274,9 @@ checkMobileNo();
 resetBtn.onclick = function(){
     for(var i=0 ; i<error.length ; i++)
         error[i].style.display = 'none';
+    rankA.style.display = 'block';
+    rankB.style.display = 'none';
+    rankC.style.display = 'none';
 }
 
 //给form标签绑定一个表单提交事件
