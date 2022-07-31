@@ -7,6 +7,10 @@ div{
     display: block;
 }
 
+body{
+    background-color: rgb(242, 246, 251);
+}
+
 /*页面主体*/
 .content{
     width: 1000px;
@@ -26,6 +30,7 @@ div{
 
 /*当前位置 首页、注册链接*/
 .crumbs a{
+    background-color: rgb(242, 246, 251);
     color: #333;
     text-decoration: none;
 }
