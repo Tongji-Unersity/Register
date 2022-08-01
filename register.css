@@ -7,8 +7,10 @@ div{
     display: block;
 }
 
-body{
-    background-color: rgb(242, 246, 251);
+html{
+    height:100%;
+    background: url('images/bg.png') center no-repeat;
+    background-size:100% 100%; 
 }
 
 /*页面主体*/
@@ -26,6 +28,7 @@ body{
 .crumbs{
     height: 32px;
     line-height: 32px;
+    background-color: #e9eef5;
 }
 
 /*当前位置 首页、注册链接*/
