@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+div{
+    display: block;
+}
+
+html{
+    height:100%;
+    background: url('images/bg.png') center repeat-y;
+    background-size:100% 100%; 
+}
+
+/*页面主体*/
+.content{
+    width: 1000px;
+    margin: 0 auto;
+    font-size: 12px;  
+    font-family: Tahoma,"宋体"; 
+    color: #333;      
+    position: relative;   
+    background: #fff; 
+}
+
+/*当前位置*/
+.crumbs{
+    height: 32px;
+    line-height: 32px;
+    background-color: #e9eef5;
+}
+
+/*当前位置 首页、注册链接*/
+.crumbs a{
+    color: #333;
+    text-decoration: none;
+}
+.crumbs a:hover{
+    color: #07f;
+}
+
+/*账户信息*/
+.reg {
+    border: 1px solid #1678be;  /*边框*/
+    border-radius: 5px 5px 0 0;   /*边框圆角*/
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, .2); /*边框阴影*/
+}
+
+/*账户信息标题*/
+.reg .reg-hd{
+    height: 32px;
+    line-height: 30px;
+    color: #fff;
+    padding-left: 20px;
+    font-size: 14px;
+    position: relative;
+    background-image: linear-gradient(#9198e5, #1678be);
+}
+
+/*账户信息主要内容*/
+.reg .reg-bd{
+    padding: 0 10px;
+    position: relative;
+    border-top: 0;
+}
+
+/*账户信息列表*/
+.reg-list{
+    padding-top: 40px;
+    list-style: none;
+}
+
+/*账户信息列表单项*/
+.reg-list li{
+    height: 30px;
+    line-height: 30px;
+    margin-bottom: 5px;
+}
+
+/*账户信息列表单项标题*/
+.reg-list .label{
+    height: 30px;
+    float: left;
+    text-align: right;
+    width: 375px;
+    padding-right: 5px;
+}
+
+/*必填项“*”号*/
+.required{
+    font-size: 16px;
+    color: #f00;
+    font-family: Tahoma;
+    vertical-align: middle;
+    margin-right: 2px;
+}
+
+/*账户信息列表单项占位内容及悬浮提示*/
+.reg-list .r-txt{
+    float: left;
+}
+
+/*账户信息列表单项右侧提示*/
+.reg-list .tips{
+    float: left;
+    display: inline;
+    margin-left: 8px;
+    color: rgb(200, 70, 120);
+    height: 30px;
+    line-height: 30px;
+}
+
+/*输入框样式*/
+.inptxt{
+    height: 18px;
+    line-height: 18px;
+    border: 1px solid #cfcdc7;
+    color: #999;
+    padding: 5px 0 5px 5px;
+    width: 195px;
+    font-size: 12px;
+    font-family: Tahoma;
+}
+
+/*协议*/
+.agreement{
+    font-size: 14px;
+}
+
+/*协议选择框*/
+.agreement input{
+    vertical-align: middle;
+}
+
+/*协议链接*/
+.agreement a{
+    color: #07f;
+    text-decoration: none;
+}
+
+/*按钮区域*/
+.lay-btn{
+    margin: 50px 0;
+    height: 30px;
+    text-align: center;     
+}
+
+/*按钮样式*/
+.lay-btn input{
+    width: 150px;
+    height: 30px;
+    border: none;
+    border-radius: 15px 15px;
+    background-image: linear-gradient(#9198e5, #1678be);
+    cursor: pointer; 
+    color: #fff;
+}
+
+/*正确信息*/
+.i-ok{
+    display: block;
+    width: 14px;
+    height: 14px;
+    background-position: 0 -600px;
+}
+
+/*错误信息*/
+.reg-list label.error{
+    display: none;
+    padding-left: 5px;
+    padding-bottom: 4px;
+    height: 20px;
+    margin-left: 380px;
+    color: #FF2626;
+    line-height: 20px;  
+}
+
+/*密码安全程度*/
+.safe-rank{
+    margin-right: 5px;
+    height: 6px;
+    padding: 12px 0;
+    float: left;
+}
+.reg-list .safe-rank span{
+    float: left;
+    display: inline;
+}
+.safe-rank span{
+    display: inline-block;
+    width: 40px;
+    height: 6px;
+    overflow: hidden;
+    background: #cfcdc7;
+    margin-right: 1px;
+}
+.rank-a .s1, .rank-b .s1, .rank-c .s1{
+    background: #f00;
+}
+.rank-b .s2, .rank-c .s2{
+    background: #ff9326;
+}
+.rank-c .s3{
+    background: #91c41a;
+}
+#_div_password_rank_a,#_div_password_rank_b,#_div_password_rank_b{
+    display: none;
+}
